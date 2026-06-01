@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tgromance.com/sitemap.xml
