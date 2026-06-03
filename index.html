@@ -18,7 +18,51 @@
     <meta name="twitter:title" content="TG Romance | Trans Dating for Real Connection">
     <meta name="twitter:description" content="Meet trans singles with more confidence using safety-first dating tips, profile guidance, and partner app access.">
 
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://tgromance.com/#website","url":"https://tgromance.com/","name":"TG Romance","description":"TG Romance is an inclusive trans dating and romance guide for people seeking meaningful connections.","inLanguage":"en"},{"@type":"ItemList","name":"TG Romance related dating guides","itemListElement":[{"@type":"ListItem","position":1,"name":"Trans Dating Guide","url":"https://tgromance.com/trans-dating-guide.html"},{"@type":"ListItem","position":2,"name":"Trans Singles Near Me","url":"https://tgromance.com/trans-singles-near-me.html"},{"@type":"ListItem","position":3,"name":"Trans Women Dating","url":"https://tgromance.com/trans-women-dating.html"},{"@type":"ListItem","position":4,"name":"Safe Online Dating","url":"https://tgromance.com/safe-online-trans-dating.html"},{"@type":"ListItem","position":5,"name":"First Date Ideas","url":"https://tgromance.com/first-date-ideas.html"}]},{"@type":"FAQPage","@id":"https://tgromance.com/#faq","mainEntity":[{"@type":"Question","name":"What is TG Romance?","acceptedAnswer":{"@type":"Answer","text":"TG Romance is an inclusive dating guide and landing page for trans singles and people interested in respectful, meaningful transgender dating."}},{"@type":"Question","name":"How can I meet trans singles safely online?","acceptedAnswer":{"@type":"Answer","text":"Use a dating platform with profile tools, keep early conversations inside the app, avoid sending money, meet first dates in public places, and trust your boundaries."}},{"@type":"Question","name":"What should I include in a dating profile?","acceptedAnswer":{"@type":"Answer","text":"Use recent photos, describe your relationship goals, share everyday interests, and explain the kind of connection you want."}}]}]}</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://tgromance.com/#website",
+          "url": "https://tgromance.com/",
+          "name": "TG Romance",
+          "description": "TG Romance is an inclusive trans dating and romance guide for people seeking meaningful connections.",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://tgromance.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is TG Romance?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "TG Romance is an inclusive dating guide and landing page for trans singles and people interested in respectful, meaningful transgender dating."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I meet trans singles safely online?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Use a dating platform with profile tools, keep early conversations inside the app, avoid sending money, meet first dates in public places, and trust your boundaries."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What should I include in a dating profile?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Use recent photos, describe your relationship goals, share everyday interests, and explain the kind of connection you want."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 
     <style>
         :root {
@@ -165,7 +209,35 @@
             color:var(--muted);
             font-size:clamp(1.05rem, 2vw, 1.22rem);
         }
-        .hero-actions { display:flex; flex-wrap:wrap; gap:.85rem; }
+        .hero-actions, .signup-panel {
+            display:flex;
+            flex-wrap:wrap;
+            gap:.8rem;
+        }
+        .signup-panel {
+            width:min(100%, 680px);
+            margin:0 0 1.2rem;
+            padding:.85rem;
+            border:1px solid rgba(154,118,216,.28);
+            border-radius:1rem;
+            background:rgba(255,255,255,.86);
+            box-shadow:0 18px 44px rgba(73,45,112,.16);
+        }
+        .signup-panel .button, .signup-panel .btn {
+            flex:1 1 190px;
+            min-height:56px;
+            font-size:1rem;
+        }
+        .signup-panel .btn {
+            background:linear-gradient(135deg, #6f45d1 0%, #d76bf0 100%);
+            box-shadow:0 16px 34px rgba(127,95,198,.34);
+        }
+        .signup-note {
+            margin:0 0 1.6rem;
+            color:var(--muted);
+            font-size:.94rem;
+            font-weight:800;
+        }
         .hero-stats {
             display:grid;
             grid-template-columns:repeat(3, minmax(0, 1fr));
@@ -287,8 +359,13 @@
             justify-content:flex-end;
             gap:.75rem;
             margin:0;
+            padding:.9rem;
+            border:1px solid rgba(255,255,255,.22);
+            border-radius:1rem;
+            background:rgba(255,255,255,.1);
         }
-        .app-btn.primary { background:var(--gold); color:var(--ink); }
+        .app-btn { min-width:150px; }
+        .app-btn.primary { background:var(--gold); color:var(--ink); box-shadow:0 16px 34px rgba(174,232,245,.24); }
 
         .faq-list { display:grid; gap:.8rem; }
         .faq-item { padding:.35rem 1.1rem; }
@@ -373,7 +450,7 @@
             .logo a { font-size:.95rem; }
             .logo a::before { width:38px; height:38px; }
             .hero h1 { font-size:3rem; }
-            .hero-actions, .app-buttons { align-items:stretch; flex-direction:column; }
+            .hero-actions, .signup-panel, .app-buttons { align-items:stretch; flex-direction:column; }
             .button, .btn, .app-btn { width:100%; }
             .hero-stats div, .feature-card { min-height:auto; }
         }
@@ -407,10 +484,12 @@
             <p class="eyebrow">Inclusive transgender dating guide</p>
             <h1 id="hero-title">Trans Dating for Real Romance, Safer Starts, and Better Matches</h1>
             <p>TG Romance helps trans singles and trans-attracted people meet with more confidence. Find practical dating tips, safety guidance, and quick access to partner platforms built for meaningful connection.</p>
-            <div class="hero-actions">
-                <a href="https://www.bicupid.com/registerStep1?tid=af100017352_RR" class="btn" rel="nofollow sponsored">Start Meeting Singles</a>
-                <a href="#dating-guide" class="button secondary">Read Dating Tips</a>
+            <div class="signup-panel" aria-label="Signup options">
+                <a href="https://www.bicupid.com/registerStep1?tid=af100017352_RR" class="btn" rel="nofollow sponsored">Join Free</a>
+                <a href="https://www.bicupid.com/registerStep1?tid=af100017352_RR" class="button secondary" rel="nofollow sponsored">iOS App</a>
+                <a href="https://www.bicupid.com/registerStep1?tid=af100017352_RR" class="button secondary" rel="nofollow sponsored">Android App</a>
             </div>
+            <p class="signup-note">Choose web, iOS, or Android. All three options start from the same secure signup path.</p>
             <dl class="hero-stats" aria-label="TG Romance highlights">
                 <div>
                     <dt>Safety first</dt>
@@ -620,7 +699,12 @@
     </section>
 </main>
 
-<footer><div class="container footer-inner"><p>© 2026 tgromance.com | All rights reserved.</p><p class="footer-note"><a href="trans-dating-guide.html">Trans Dating Guide</a> · <a href="trans-singles-near-me.html">Trans Singles Near Me</a> · <a href="trans-women-dating.html">Trans Women Dating</a> · <a href="safe-online-trans-dating.html">Safe Online Dating</a> · <a href="first-date-ideas.html">First Date Ideas</a> · <a href="sitemap.xml">Sitemap</a></p></div></footer>
+<footer>
+    <div class="container footer-inner">
+        <p>© 2026 tgromance.com | All rights reserved.</p>
+        <p class="footer-note">TG Romance may link to partner dating platforms. Always follow local laws, platform rules, and personal safety practices.</p>
+    </div>
+</footer>
 
 </body>
 </html>
